@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent>h1{
+            color: palevioletred;
+        }
+        .parent>h2{
+            background-color: blue;
+        }
+        .parent h3{
+            color: cadetblue;
+        }
+        h2+h4{
+            font-size: 6em;
+        }
+        h1~.child h3{
+          background-color: chartreuse; 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parent">  
+        <h1>sneha</h1>
+        <h2>prashanth</h2>
+        <div class="child">
+            <h3>nani</h3>
+        </div>
+        <h2>chanti</h3>
+        <h4>ramcharan</h4>    
+    </div>
+</body>
+</html>
