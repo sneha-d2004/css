@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-rows: repeat(5,100px);
+            gap:20px;
+           
+        }
+        .nav{
+            grid-row: 1/6;
+        }
+        .header{
+            grid-column: 2/6;
+        }
+        .article{
+            grid-column: 2/5;
+            grid-row: 2/5;
+        }
+        .ads{
+            grid-row: 2/5;
+            
+        }
+        .footer{
+            grid-column: 2/6;
+        }
+        
+        .nav,.header,.article,.ads,.footer{
+            background-color: yellow;
+        }
+        @media screen  and (min-width:320px) and (max-width:450px){
+           .parent{
+            display: grid;
+            grid-template-rows: repeat(5,100px);
+            gap:20px;
+           
+        }
+        .nav{
+            grid-row: 1/6;
+        }
+        .header{
+            grid-column: 2/6;
+        }
+        .article{
+            grid-column: 2/5;
+            grid-row: 2/5;
+        }
+        .ads{
+            grid-row: 2/5;
+            
+        }
+        .footer{
+            grid-column: 2/6;
+        }
+        
+        .nav,.header,.article,.ads,.footer{
+            background-color:orange
+        } 
+        }
+        @media screen  and (min-width:450px) and (max-width:768px) {
+            .parent{
+            display: grid;
+            grid-template-rows: repeat(5,100px);
+            gap:20px;
+           
+        }
+        .nav{
+            grid-row: 1/6;
+        }
+        .header{
+            grid-column: 2/6;
+        }
+        .article{
+            grid-column: 2/5;
+            grid-row: 2/5;
+        }
+        .ads{
+            grid-row: 2/5;
+            
+        }
+        .footer{
+            grid-column: 2/6;
+        }
+        
+        .nav,.header,.article,.ads,.footer{
+            background-color: pink;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="nav">nav</div>
+        <div class="header">header</div>
+        <div class="article">article</div>
+        <div class="ads">ads</div>
+        <div class="footer">fotter</div>
+    </div>
+</body>
+</html>
