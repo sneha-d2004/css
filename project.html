@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        .parent{
+            display: flex;
+            column-gap: 20px;
+            width: 100%;
+            position: fixed;
+           border-bottom: 3px solid white ;
+           z-index:100 ;
+           
+              
+        }
+        .parent>a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;    
+        }
+        .child>img{
+          position:relative;
+            width: 100%;  
+        }
+        .child h1{
+            position: absolute;
+            top: 30%;
+            left: 35%;
+            font-size: 50px;
+        }
+        .child h5{
+            position: absolute;
+            top:43%;
+            left:32%;
+            color:white;
+            font-size: 20px;   
+        }
+        .child h6{
+             position: absolute;
+            top: 45%;
+            left: 35%;
+            color: white;
+            font-size: 20px;
+        }
+        .child h4{
+            position: absolute;
+            top:55%;
+            left:40%;
+            color: white;
+           width: 8vw;
+           height: 5vh;
+           background-color: orange; 
+           border-radius: 3px;
+           font-size: 20px;
+           padding-top: 8px;
+           padding-left: 3px;
+           
+        }
+        .child h3{
+            position: absolute;
+            top:56%;
+            left:50%;
+            color: white;
+            background-color: green;
+            height: 5vh;
+            width: 7vw;
+            border-radius: 3px;
+            font-size: 20px;
+            padding-top: 8px;
+            padding-left: 3px;
+        }
+        .container{
+            display: flex;
+            background-color: rgb(238, 232, 232);
+           height:74vh;
+           top:0;
+        }
+        .container>.a,h2{
+             justify-content: right;
+             margin-left: 60px;
+             margin-top: 50px;
+            font-family: "Playfair Display";
+            width:600px;
+                
+        }
+        .container>.b,input{
+          width: 300px;
+          height: 25px;
+           margin-top: 15px;
+           margin-bottom: 2%;
+          padding-bottom: 2%;
+          margin-left: 80px;
+          border-color: white;
+          background-color: orange;
+          color: aliceblue;
+         
+           
+        }
+        .container>.b{
+            background-color: orange;
+            height: 69vh;
+            width: 35vw;
+            margin-top: 0%;
+               
+        }
+        .q{
+            background-color: orange;
+            height: 10vh;
+            width: 3vw;
+            border-radius: 20px;
+             display: flex;
+            align-items: center;
+             padding-left: 20px;
+              position: absolute;
+              margin-left:24%;
+              margin-top: 24%;
+              animation-name: nani;
+              animation-delay: 0.5s;
+            animation-duration:0.6s;
+            animation-direction: alternate;
+            animation-timing-function: linear;   
+            animation-iteration-count: infinite;
+        }
+         .g{
+           
+            height:0;
+            width:0;
+            border-left: 20px solid white;
+            border-top: 20px solid transparent;
+            border-bottom:20px solid transparent ;
+            margin-left: 10px;
+            position: relative; 
+            
+              
+        } 
+        .container1{
+            display: flex;
+             margin-top: 120px;
+        }
+        .container1>img{
+            margin-left: 100px;
+           border-radius: 5%;
+          
+        }
+        .container1>.c{
+          width: 500px;
+           margin-left: 30px;
+            margin-top: 110px;
+            display: block;
+            font-family: "Playfair Display";     
+        }
+       @keyframes nani{
+         50%{
+background-color: orange;
+       height: 70px;
+            width: 50px;
+            border-radius: 270px;
+            
+       }
+       100%{
+        background-color: orange;
+          height: 80px;
+            width: 60px;
+            border-radius: 270px;
+    }
+}
+.container2{
+    display: flex;
+    margin-top: 60px;
+    width: 100%; 
+    align-items: flex-start;
+     
+}
+    .sneha{
+       margin-left: 50px;
+       margin-top: 70px;
+      
+     }
+     
+    .imag{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 60px;  
+    }
+
+    .imag img {
+      width: 110%;
+      height: 160px;
+      object-fit: cover;  
+    }
+   
+      .chanti{
+        
+       display: grid;
+       grid-template-columns: repeat(2, 390px); 
+       margin-right:60px;
+       
+      
+      }
+     
+      .container2  p {
+       margin-top: 25px;
+      font-size: 20px; 
+      color: #666; 
+      margin-left:90px;
+       width: 330px; 
+      
+     } 
+     .d h2{
+    margin-left: 100px;
+    font-size: 20px; 
+     }
+    .menu-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 50px;
+  background-color: rgb(241, 229, 229);
+  height: 50vh;
+}
+
+.menu-card {
+  background: #f8f8f8;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 2rem;
+  text-align: center;
+  max-width: 300px;
+  transition: box-shadow 0.2s;
+}
+
+.menu-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+.menu-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ab8d46;
+}
+
+.menu-card p {
+  color: #666;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+
+.menu-card a {
+  color: #ab8d46;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.menu-card a:hover {
+  text-decoration: underline;
+}
+.food{
+  margin-top: 60px;
+}
+.nani{
+  display: flex;
+  width:100%;
+}
+ .prashanth{
+  margin-left: 20%;
+   height: 20.5vh; 
+
+   
+}
+.srinu{
+   margin-left: 0%;
+ 
+}
+.prashanth>img{
+  border-radius: 70px;
+  
+}
+.srinu>img{
+  border-radius: 20px;
+  height: 100vh;
+  width: 33vw;
+}
+.sunny{
+  display: flex;
+ justify-content: center;
+ gap:3%;
+ border: solid white;
+}
+.icon {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .icon a {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background: #e99c2e;   
+      border-radius: 50%;
+      color: white;
+      font-size: 22px;
+      line-height: 50px;
+      text-align: center;
+      
+    }
+
+    .icon a:hover {
+    
+    }
+    .container3{
+      background: #f8f8f8;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+    }  
+     .yesumma{ 
+    display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 50px;
+  background-color: rgb(250, 244, 244);
+  height: 50vh;
+  margin-left: 100px;
+     }
+     .ram>img{
+     margin-left: 110px;
+     border-radius: 100px;
+     }
+     .ram p{
+       color: #666;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+   width: 254px; 
+  margin-left: 45px;
+     }
+     .ram{
+      background:white;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+     }
+      .yesumma:hover{
+            transform: translatex(500px);
+     } 
+     .baburao{
+      display: flex;
+      margin-top: 10px;
+      
+     }
+     .rao{
+      margin-left: 200px; 
+     }
+     .pin{
+       margin-left:10px;
+      margin-top: -90px; 
+     }
+     .map{
+      display: flex;
+      margin-top: 30px;
+      margin-left: 70px;
+      
+     }
+     
+     .form{
+      display: block; 
+      width: 10%;
+      height: 10vh;
+     } 
+     .pandu{
+      position: relative;
+      margin-top: -5%;
+      /* background-color: white; */
+       background: #f8f8f8;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+       width: 25%;
+     }
+      footer {
+  background: #f8f8f8;
+  color: #333;
+  padding: 40px 0 10px 0;
+  font-family: Arial, sans-serif;
+ 
+}
+
+.footer-container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  color: #d6a219;
+  margin-bottom: 12px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-section.address span,
+.footer-section.address a {
+  color: #d6a219;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 8px;
+  background: #d6a219;
+  color: #fff;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.social-links a:hover {
+  background: #a78416;
+}
+
+.footer-section.links ul li a {
+  color: #5a5a5a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-section.links ul li a:hover {
+  color: #d6a219;
+}
+
+.footer-section.newsletter p {
+  font-size: 15px;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+.footer-section.newsletter form {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-section.newsletter input[type="email"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #d6a219;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.footer-section.newsletter button {
+  background: #d6a219;
+  color: #fff;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.footer-section.newsletter button:hover {
+  background: #a78416;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 24px;
+  color: #a78416;
+  font-size: 15px;
+}
+
+.footer-bottom a {
+  color: #d6a219;
+  text-decoration: none;
+  margin-left: 3px;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+   </style>
+</head>
+<body>
+    <div class="parent">
+        <a href="#BURGER KING" style="font-size: 30px;"><b style="color: orange;">BURGER</b>  <b style="color: green;">KING</b></a>
+        <a href="#Home" style="margin-left: 500px;">Home</a>
+        <a href="#About">About</a>
+        <a href="#Feature">Feature</a>
+        <a href="#Chef">Chef</a>
+        <a href="#Menu">Menu</a>
+        <a href="#Booking">Booking</a>
+        <a href="#Pages">Pages</a>
+        <a herf="#Contact">Contact</a>
+        </div>
+    <div class="child" id="BURGER KING">
+        <img src="https://themewagon.github.io/burgerking/img/carousel-1.jpg">
+        <h1><b style="color: white;">Best</b> <b style="color: orange;">Quality</b><b style="color: white;"> Ingredients</b></h1>
+        <h5>Lorem ipsum dolor sit amet elit.Phasellus ut molls mauris.Vivamus</h5> 
+        <h6> egestas eleifnd dul ac consequat at lectus in malesuada</h6>
+        <h4>View Menu</h4>
+        <h3>Book Table</h3>
+    </div> 
+    <div class="container" id="Home" >
+        <div class="a">
+            <h2 style="color: green;">Book A Table</h2>
+            <h1 style="margin-left: 50px;">Book Your Table For Private Dinners & Happy Hours</h1>
+            <p style="margin-left: 50px;color: rgb(120, 117, 117); font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. 
+                Curabitur facilisis 
+                ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.</p>
+            <p style="margin-left: 50px;color: rgb(120, 117, 117); font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
+                 Curabitur facilisis ornare velit non vulputate. 
+                Aliquam metus tortor, auctor id gravida condimentum, 
+                viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
+                Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.</p>    
+        </div>
+        <div class="b">
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="email" placeholder="Email">
+            <input type="text" id="Mobile" placeholder="Mobile">
+            <input type="text" id="Date" placeholder="Date">
+            <input type="text" id="Time" placeholder="Time">
+            <input type="text" id="Guest" placeholder="Guest">
+            <p style="margin-left: 60px; background-color:white; width: 15vw; color: orange; height:30px;padding-left: 100px;padding-top: 5px;">Book Now</p>
+        </div>
+    </div> 
+    <div class="container1" id="About">
+        <img src="https://themewagon.github.io/burgerking/img/about.jpg">
+        <div class="q">
+        <div class="g"></div>
+        <br>
+        </div>
+        <div class="c">
+        <h4 style="color: green; font-size: 19px;">About Us</h4>
+        <h1 style="font-size: 40px;">Cooking Since 1990</h1>
+        <p style="color: rgb(120, 117, 117); font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. 
+            Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor 
+            id gravida condimentum, viverra quis sem.</p>
+        <p style="color: rgb(148, 142, 142); font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. 
+            Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+             Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor.
+             Aliquam interdum at lacus non blandit</p>
+             <h5 style="color: white; background-color: orange; padding-top: 10px; width: 20%; height: 5%; font-size: 17px">Book A Table</h5>
+        </div>
+    </div> 
+    <div class="container2">
+        <div class="sneha">
+            <h4 style="margin-left: 50px; color: green; font-size: 20px;">Why Choose Us</h4>
+            <h1 style="margin-left: 50px; font-size: 35px;">Our Key Features</h1>
+        <div class="imag">
+            <img src="https://themewagon.github.io/burgerking/img/feature-1.jpg">
+            <img src="https://themewagon.github.io/burgerking/img/feature-2.jpg">
+            <img src="https://themewagon.github.io/burgerking/img/feature-3.jpg">
+            <img src="https://themewagon.github.io/burgerking/img/feature-4.jpg">
+        </div>
+       
+        <p>Lorem ipsum dolor sit amet consec adipis elit.
+             Phasel nec preti mi. Curabit facilis ornare velit non vulputa.
+              Aliquam metus tortor, auctor id gravida condime, 
+            viverra quis sem. Curabit non nisl nec nisi sceleri maximus</p>
+         <p style="margin-left: 10%; color: white; background-color: orange; padding: 16px 36px; width: 400px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            box-shadow: 0 2px 8px #f9b23333;
+            ">Book Now</p>
+        </div>
+    
+          <div class="chanti">
+            <div class="d" >
+            <div class="feature-icon" style="margin-left: 100px; font-size: 50px;">👨‍🍳</div>
+            <h2  >World’s best Chef</h2>
+            <p >Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis
+                 ornare velit non vulput metus tortor</p>
+            </div>
+              <div class="d">
+               <div class="feature-icon"  style="margin-left: 100px; font-size: 50px;">🥕</div>
+                <h2 >Natural ingredients</h2>
+                <p >Lorem ipsum dolor sit amet elit. 
+                    Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor</p>
+              </div>
+              
+              <div class="d">
+                <div class="feature-icon"  style="margin-left: 100px; font-size: 50px;">🏅</div>
+                <h2  >Best quality products</h2>
+                 <p>Lorem ipsum dolor sit amet elit. 
+                    Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor</p>
+              </div> 
+              <div class="d">
+                <div class="feature-icon"  style="margin-left: 100px; font-size: 50px;">🥬</div>
+                <h2 >Fresh vegetables & Meet</h2>
+                 <p>Lorem ipsum dolor sit amet elit. 
+                    Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor</p>
+              </div> 
+              <div class="d">
+               <div class="feature-icon"  style="margin-left: 100px; font-size: 50px;">🚚</div>
+                <h2 >Fastest door delivery</h2>
+                  <p >Lorem ipsum dolor sit amet elit. 
+                    Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor</p>
+              </div> 
+              <div class="d">
+                 <div class="feature-icon"  style="margin-left: 100px; font-size: 50px;">🥩</div>
+                <h2 >Ground beef & Low fat</h2>
+                 <p  >Lorem ipsum dolor sit amet elit. 
+                    Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor</p>
+              </div>     
+          </div>
+    </div>
+         <div class="menu-section">
+  <div class="menu-card">
+    <div class="menu-icon">🍔</div>
+    <h1>Burgers</h1>
+    <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputate. Aliquam metus tortor auctor quis sem.</p>
+    <a href="#">View Menu</a>
+  </div>
+  <div class="menu-card">
+    <div class="menu-icon">🥨</div>
+    <h1>Snacks</h1>
+    <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputate. Aliquam metus tortor auctor quis sem.</p>
+    <a href="#">View Menu</a>
+  </div>
+  <div class="menu-card">
+    <div class="menu-icon">🍹</div>
+    <h1>Beverages</h1>
+    <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputate. Aliquam metus tortor auctor quis sem.</p>
+    <a href="#">View Menu</a>
+  </div>
+</div>
+      <center><div class="food"></div>
+      <h5 style="font-size: 20px; color:green">Food Menu</h5>
+      <h1>Delicious Food Menu</h1>
+      <div class="burgers" style="display: flex; gap: 30px; margin-left: 500px; font-size: 20px;">
+      <h4 style="background-color: green;  border: 2px none ;
+  box-shadow: 5px 5px 10px #fbf4f4; color: white; border-radius: 5px; width: 7vw;"> Burgers</h4>
+      <h3 style="background-color: orange;  border: 2px none;
+  box-shadow: 5px 5px 10px #fbf4f4; color: white; border-radius: 5px;  width: 7vw;">Snakes</h3>
+      <h4 style="background-color:orange;  border: 2px none ; border-radius: 5px; height: 6vh; width: 7vw;
+  box-shadow: 5px 5px 10px #fbf4f4; color: white;">Beverages</h4>
+      </div>
+      </div></center>
+     <div class="nani">
+      <ul>
+      <div class="prashanth">
+     <img src=" https://themewagon.github.io/burgerking/img/menu-burger.jpg">
+     <b style="margin-left: 10%;font-size: 20px;">Mini cheese Burger...........................$9.00</b>
+     <p style="margin-left: 24%;width: 60vw;font-size: 20px;color: gray; ">Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+      </div>
+     <div class="prashanth">
+      <img src="https://themewagon.github.io/burgerking/img/menu-burger.jpg">
+      <b style="margin-left: 10%; font-size: 20px;">Double size burger............................$11.00</b>
+       <p style="margin-left: 24%;width: 60vw; font-size: 20px; color: gray;">Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+     </div>
+     <div class="prashanth">
+      <img src="https://themewagon.github.io/burgerking/img/menu-burger.jpg">
+      <b style="margin-left: 10%; font-size: 20px;" >Bacon, EGG and Cheese..........................$13.00</b>
+      <p style="margin-left: 24%;width: 60vw; font-size: 20px; color: gray;">Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+     </div>
+     <div class="prashanth">
+      <img src="https://themewagon.github.io/burgerking/img/menu-burger.jpg">
+      <b style="margin-left: 10%; font-size: 20px;">Pulled porx Burger...........................$18.00</b>
+      <p style="margin-left: 24%;width: 60vw; font-size: 20px; color: gray;">Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+     </div>
+     <div class="prashanth">
+      <img src="https://themewagon.github.io/burgerking/img/menu-burger.jpg">
+      <b style="margin-left: 10%; font-weight: 600;
+    font-size: 20px;
+    color: #25415D;
+    ">Fried chicken Burger..........................$22.00</b>
+      <p style="margin-left: 24%;width: 60vw; font-size: 20px; color: gray;">Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+     </div>
+     </ul>
+     <div class="srinu">
+      <img src="https://themewagon.github.io/burgerking/img/menu-burger-img.jpg">
+     </div>
+     </div>
+     <center><div class="man" style="margin-top: 50px;">
+      <h5 style="font-size: 20px; color: green;">Our Team</h5>
+      <h2 style="font-size: 40px; margin-left:2%;">Our Master Chef</h2>
+     </div></center>
+     <div class="sunny">
+      <div class="container3">
+        <img src="https://themewagon.github.io/burgerking/img/team-1.jpg" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+        <div class="icon">
+         <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <i style="margin-left: 30%; font-size: 30px;">Adam Phillips</i>
+        <p style="margin-left: 30%; font-size: 17px; color: gray;">CEO, Co Founder</p>
+      </div>
+      <div class="container3">
+        <img src="https://themewagon.github.io/burgerking/img/team-2.jpg" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+        <div class="icon">
+         <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+       <i style="margin-left: 30%; font-size: 30px;">Dylan Adams</i>
+       <p style="margin-left: 30%; font-size: 17px; color: gray;">Master Chef</p>
+      </div>
+      <div class="container3">
+        <img src="https://themewagon.github.io/burgerking/img/team-3.jpg" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+        <div class="icon">
+         <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+       <i style="margin-left: 30%; font-size: 30px;">Jhon Doe</i>
+       <p style="margin-left: 30%; font-size: 17px; color: gray;">Master Chef</p>
+      </div>
+      <div class="container3">
+        <img src="https://themewagon.github.io/burgerking/img/team-4.jpg" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+        <div class="icon">
+         <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+       <i style="margin-left: 30%; font-size: 30px;">Josh Dunn</i>
+       <p style="margin-left: 33%; font-size: 17px; color: gray;" >Master Chef</p>
+      </div>
+     </div>
+     <div class="yesumma">
+      <div class="ram">
+        <img src="https://themewagon.github.io/burgerking/img/testimonial-4.jpg">
+        <p>Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor. 
+          Lorem ipsum dolor sit amet elit</p>
+          <b style="margin-left: 90px; font-size: 20px;">Client Name</b>
+        <p style="margin-left: 100px;">Profession</p>  
+      </div>
+      <div class="ram">
+        <img src="https://themewagon.github.io/burgerking/img/testimonial-1.jpg">
+        <p>Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor. 
+          Lorem ipsum dolor sit amet elit</p>
+          <b style="margin-left: 90px; font-size: 20px;">Client Name</b>
+        <p style="margin-left: 100px;">Profession</p>  
+      </div>
+      <div class="ram">
+        <img src="https://themewagon.github.io/burgerking/img/testimonial-2.jpg">
+        <p>Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor. 
+          Lorem ipsum dolor sit amet elit</p>
+          <b style="margin-left: 90px; font-size: 20px;">Client Name</b>
+        <p style="margin-left: 100px;" >Profession</p>  
+      </div>
+      <div class="ram">
+        <img src="https://themewagon.github.io/burgerking/img/testimonial-3.jpg">
+        <p>Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor. 
+          Lorem ipsum dolor sit amet elit</p>
+          <b style="margin-left: 90px; font-size: 20px;">Client Name</b>
+        <p style="margin-left: 100px;">Profession</p>  
+      </div>
+     </div>
+     <center><div class="vincy" style="margin-top: 6%;">
+      <h3 style="color: green;">Contact Us</h3>
+      <h1>Contact For Any Query</h1>
+     </div></center>
+     <div class="baburao">
+      <div class="rao">
+      <ion-icon name="location-outline" style="font-size: 50px; margin-left: -50px; margin-top: 10px; border-radius: 100px; background-color: #e99c2e; color: white;"></ion-icon>
+      <div class="pin">
+        <p style="font-size: 20px">Address</p>
+        <h5 style="font-size: 15px;">123 Street, NY, USA</h5>
+      </div>
+       </div>
+       <div class="rao">
+      <ion-icon name="call-outline" style="font-size: 50px; margin-left: -50px; margin-top: 10px;border-radius: 100px; background-color:#e99c2e; color:white"></ion-icon>
+       <div class="pin" >
+      <p style="font-size: 20px">Call Us</p>
+      <h5 style="font-size: 15px;">+012 345 6789</h5>
+      </div>
+      </div> 
+       <div class="rao">
+      <ion-icon name="mail-outline" style="font-size: 50px; margin-left: -50px; margin-top: 10px; border-radius: 90px; background-color: #e99c2e; color: white;"></ion-icon>
+       <div class="pin">
+      <p style="font-size: 20px;">Email Us</p>
+      <h5 style="font-size: 15px;">info@example.com</h5>
+        </div>
+      </div>
+      <div class="rao">
+      <ion-icon name="arrow-redo-outline" style="font-size: 50px; margin-left: -50px; margin-top: 10px; background-color: #e99c2e; border-radius: 100px; color: white;"></ion-icon> 
+      <div class="pin">
+        <p style="font-size: 20px">Follow Us </p>
+         <a href="#" style=" background-color: #e99c2e; color: #f8f8f8; border-radius: 10px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style=" background-color: #e99c2e; color: #f8f8f8; border-radius: 10px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style=" background-color: #e99c2e; color: #f8f8f8; border-radius: 10px;"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"style=" background-color: #e99c2e; color: #f8f8f8; border-radius: 10px;"><i class="fab fa-instagram"></i></a> 
+      </div>
+    </div>
+    </div>
+    <div class="map">
+      <div class="frame">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2985005.5497439015!2d-77.332097!3d43.061532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1758264886327!5m2!1sen!2sbd" width="500" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" border-radius="40%"></iframe>
+      </div>
+      <div class="form" >
+        <input type="text" id="name" placeholder="Your Name" style="background-color: white">
+            <input type="text" id="email" placeholder=" your Email"  style="background-color: white; margin-top: 10px;">
+            <input type="text" id="Mobile" placeholder="Subject"  style="background-color: white;  "><br>
+            <textarea name="" id="" style="margin-left: 80px; margin-top: 10px;">Message</textarea><br>
+            <button style="margin-left:19px; margin-top: 50px; background-color: #e99c2e; padding: 2%; border-color: white; border-radius: 4px; padding: 1%; height: 60%; color: white;">send message</button> 
+      </div>
+    </div>
+    <center><div class="wast "style="margin-top:30px">
+      <p style="color: green; font-size: 20px;">Food Blog</p>
+      <h1 style="font-size: 40px;">Latest From Food Blog</h1>
+    </div></center>
+    <center><div class="sravanthi" >
+      <div class="charan">
+        <img src="https://themewagon.github.io/burgerking/img/blog-1.jpg" style="border-radius: 20px; width: 500px; height: 500px;">
+        <img src="https://themewagon.github.io/burgerking/img/blog-2.jpg" style="border-radius: 20px; margin-left: 10px; width: 500px; height: 500px;">
+      </div></center>
+      <div class="pandu"style="margin-left:60%;" >
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <div class="meta" style="display: flex;" >
+          <ion-icon name="person-outline" style="color: #e99c2e;"></ion-icon>
+          <p style="margin-top: -5px;">Admine</p>
+          <ion-icon name="fast-food-outline" style="color: #e99c2e;"></ion-icon>
+          <p style="margin-top: -5px;">Food</p>
+          <ion-icon name="calendar-outline" style="color: #e99c2e;"></ion-icon>
+          <p style="margin-top: -5px;">01-Jan-2045</p>
+          <ion-icon name="chatbubbles-outline" style="color: #e99c2e;"></ion-icon>
+          <p style="margin-top: -5px;">10</p>
+        </div>
+        <p style="width:300px;color: #666;">Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare 
+          velit non vulpte liqum metus tortor. Lorem ipsum dolor sit amet elit. 
+          Neca pretim miura bitur facili ornare velit non vulpte</p>
+        <button style="background-color: #e99c2e; color: #f8f8f8; border-color: #f8f8f8;">Read More</button>
+      </div>
+      <div class="pandu"style="margin-left:19%; margin-top:-18%;">
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <div class="meta" style="display: flex;" >
+          <ion-icon name="person-outline" style="color: #e99c2e;"></ion-icon>
+          <p style="margin-top: -5px;">Admine</p>
+          <ion-icon name="fast-food-outline" style="color: #e99c2e;"></ion-icon>
+          <p style="margin-top: -5px;">Food</p>
+          <ion-icon name="calendar-outline" style="color: #e99c2e;"></ion-icon>
+          <p style="margin-top: -5px;">01-Jan-2045</p>
+          <ion-icon name="chatbubbles-outline" style="color: #e99c2e;"></ion-icon>
+          <p style="margin-top: -5px;">10</p>
+        </div>
+        <p style="width:300px;color: #666;">Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare 
+          velit non vulpte liqum metus tortor. Lorem ipsum dolor sit amet elit. 
+          Neca pretim miura bitur facili ornare velit non vulpte</p>
+        <button style=" background-color: #e99c2e; color: #f8f8f8; border-color: #f8f8f8;">Read More</button>
+      </div>
+    </div>
+    <div class="footer-container" style="margin-top: 6%; background-color: rgb(246, 240, 240); width: 500vw;">
+      <div class="footer-section address">
+          <h3>Our Address</h3>
+      <ul>
+        <li><span>📍</span> 123 Street, New York, USA</li>
+        <li><span>📞</span> +012 345 67890</li>
+        <li><span>✉</span> info@example.com</li>
+      </ul>
+      <div class="social-links">
+        <a href="#"><span>🐦</span></a>
+        <a href="#"><span>📘</span></a>
+        <a href="#"><span>▶</span></a>
+        <a href="#"><span>📸</span></a>
+        <a href="#"><span>💼</span></a>
+      </div>
+    </div>
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Terms of use</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">FQAs</a></li>
+      </ul>
+    </div>
+    <div class="footer-section newsletter">
+      <h3>Newsletter</h3>
+      <p>Lorem ipsum dolor sit amet elit. Quisque eu lectus a leo dictum nec non quam.</p>
+      <form>
+        <input type="email" placeholder="Email goes here" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+          
+
+         
+
+      
+     
+    
+
+</body>
+</html>
