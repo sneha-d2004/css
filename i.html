@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <style>
+    .parent{
+     width:100%;
+     position: fixed;
+     border-bottom: 1px solid white;
+     z-index:100 ;
+           
+    }
+    body{
+       overflow-x: hidden; 
+    }
+    .child{
+      display: flex;
+      list-style: none;
+      column-gap: 15px;
+      font-size: 23px;
+      margin-top: -0%;
+    }
+    .child li a{
+      text-decoration: none;
+      color: black; 
+    }
+    .dropdown{
+      display: none;
+      list-style: none;
+    }
+    .child li:hover .dropdown{
+      display: block;
+    }
+    .child1>img{
+      position:relative;
+      width: 102%;
+      margin-top: -10%;
+      margin-left: -1%;
+    }
+    .child1 h1{
+            position: absolute;
+            top: 33%;
+            left: 35%;
+            font-size: 50px;
+    } 
+    .child1 h5{
+            position: absolute;
+            top:49%;
+            left:32%;
+            color:white;
+            font-size: 23px;
+    }
+    .child1 h6{
+             position: absolute;
+            top: 50%;
+            left: 35%;
+            color: white;
+            font-size: 23px;
+        } 
+        .child1 p{
+         top: 63%;
+         position: absolute;
+         left:43%;
+         color: white;
+         background-color: orange;
+         font-size: 20px;
+         width: 7vw;
+         height: 5vh;
+         padding-top: 10px;
+         padding-left: 5px;
+         border: solid orange;
+         border-radius: 5px;
+         
+        } 
+        .child1 p:hover{
+          background-color: white;
+          color: black;
+        } 
+        .child1 h{
+         top: 66%;
+         position: absolute;
+         left:52%;
+         color: white;
+         background-color:green;
+         font-size: 20px;
+         width: 7vw;
+         height: 5vh;
+         padding-top: 10px;
+         padding-left: 5px;
+         border: solid green;
+         border-radius: 5px;        
+        }
+        .child1 h:hover{
+          background-color: white;
+          color: black;
+        }
+        .container{
+          display: flex;
+          background-color: rgb(238, 232, 232);
+          height:74vh;
+          top:0;
+          margin-left: -1%;
+          margin-top: -1%;
+          width: 101.9%;
+        }
+         .container>.a,h2{
+             justify-content: right;
+             margin-left: 2px;
+             margin-top: 50px;
+            font-family: "Playfair Display";
+            width:600px;
+                
+        }
+        .container>.a {
+          margin-left: 230px;
+        }
+        .container>.b,input{
+          width: 300px;
+          height: 25px;
+          margin-top: 15px;
+          margin-bottom: 2%;
+          padding-bottom: 2%;
+          margin-left: 80px;
+          border-color: white;
+          background-color: orange;
+          color: aliceblue;
+         
+           
+        }
+        .container>.b{
+            background-color: orange;
+            height: 69vh;
+            width: 30vw;
+            margin-top: 0%;
+        }
+        .b p{
+         margin-left: 13%;
+          
+        } 
+        .b p:hover{
+         background-color: orange;
+         color: white;
+        } 
+        .b .Book{
+          background-color:white;
+          width: 15vw; 
+          color: orange;
+          height:30px;
+          padding-left:100px;
+          padding-top: 5px;
+        }
+        .q{
+            background-color: orange;
+            height: 10vh;
+            width: 3vw;
+            border-radius: 20px;
+             display: flex;
+            align-items: center;
+             padding-left: 20px;
+              position: absolute;
+              margin-left:24%;
+              margin-top: 24%;
+              animation-name: nani;
+              animation-delay: 0.5s;
+            animation-duration:0.6s;
+            animation-direction: alternate;
+            animation-timing-function: linear;   
+            animation-iteration-count: infinite;
+        }
+         .g{
+           
+            height:0;
+            width:0;
+            border-left: 20px solid white;
+            border-top: 20px solid transparent;
+            border-bottom:20px solid transparent ;
+            margin-left: 10px;
+            position: relative; 
+            
+              
+        } 
+        .container1{
+            display: flex;
+             margin-top: 100px;
+             margin-left: 1%;
+        }
+        .container1>img{
+            margin-left: 100px;
+           border-radius: 5%;
+          
+        }
+        .container1>.c{
+          width: 500px;
+          margin-left: 30px;
+          margin-top: 100px;
+          display: block;
+          font-family: "Playfair Display";     
+        }
+       @keyframes nani{
+         50%{
+         background-color: orange;
+       height: 70px;
+            width: 50px;
+            border-radius: 270px;
+            
+       }
+       100%{
+        background-color: orange;
+          height: 80px;
+            width: 60px;
+            border-radius: 270px;
+      }
+          } 
+          .c .bu{
+            color: white; 
+            background-color: orange; 
+            padding-top: 10px; 
+            width: 25%; 
+            height: 6%; 
+            font-size: 18px;
+            padding-left: 2%;
+            border-radius: 5%;
+          }
+          .c .bu:hover{
+            background-color: white;
+            color: orange;
+          } 
+          .container2{
+          display: flex;
+          margin-top: 60px;
+          width: 90%; 
+          align-items: flex-start;
+         margin-left: 1%;
+         }
+        .sneha{
+        margin-left: 50px;
+        margin-top: 30px;
+      
+       }
+     
+        .imag{
+         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 60px;  
+      }
+
+       .imag img {
+         width: 110%;
+        height: 160px;
+         object-fit: cover;  
+    }
+       .imag img:hover{
+        width: 320px;
+       }
+   
+          .chanti{
+          display: grid;
+          grid-template-columns: repeat(2, 360px); 
+          margin-right:50px;
+          margin-left: -3%;
+         }
+     
+          .container2  p {
+            margin-top: 25px;
+            font-size: 20px; 
+            color: #666;
+            margin-left:90px;
+            width: 330px; 
+      
+         } 
+          .d h2{
+           margin-left: 90px;
+           font-size: 20px; 
+       }  
+       .container2 .pa{
+           margin-left: 10%; 
+           color: white; 
+            background-color: orange; 
+             width: 200px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+           padding-left: 30%;
+            box-shadow: 0 2px 8px #f9b23333;
+           height: 3vw;
+           padding-top: 5%;
+       }
+        .sneha .pa{
+        width: 400px;
+       }
+       .d>.feature-icon{
+          margin-left:100px;
+          
+       }
+       
+       .container2 .lu{
+        width: 600px;
+       }
+       .container2 .pa:hover{
+        background-color: white;
+        color: orange;
+       }
+       .menu-section {
+       display: flex; 
+       justify-content: center;
+       gap: 2rem;
+       margin-top: 70px;
+       background-color: rgb(241, 229, 229); 
+      
+      }
+
+     .menu-card {
+       background: #f8f8f8;
+       border-radius: 15px;
+       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+       padding: 2rem;
+       text-align: center;
+       max-width: 300px;
+       transition: box-shadow 0.2s;
+       height: 40vh;
+       margin-top: 5%;
+
+      
+     }
+
+     .menu-card:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+    }
+
+    .menu-icon {
+     font-size: 3rem;
+     margin-bottom: 1rem;
+    color: #ab8d46;
+    }
+
+    .menu-card p {
+      color: #666;
+      margin-bottom: 1.2rem;
+      font-size: 1.4rem;
+    }
+
+      .menu-card a {
+      color: #ab8d46;
+     text-decoration: none;
+     font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+     .menu-card a:hover {
+     text-decoration: underline;
+     color: green;
+    }
+     .food{
+     margin-top: 60px;
+     }
+     .burgers{
+      display: flex; 
+      gap: 30px; 
+      margin-left:550px; 
+      font-size: 20px;
+     }
+     .pk{
+      background-color: green;  
+      border: 2px none ;
+      box-shadow: 5px 5px 10px #fbf4f4; 
+      color: white; 
+      border-radius: 5px; 
+      width: 7vw;
+      padding-top:1% ;
+     }.ps{
+      background-color: orange; 
+       border: 2px none;
+      box-shadow: 5px 5px 10px #fbf4f4;
+      color: white;
+      border-radius: 5px; 
+      width: 7vw;
+      padding-top:1% ;
+     }
+     .ns{
+      background-color:orange;  
+      border: 2px none ;
+       border-radius: 5px; 
+       height: 6vh; 
+       width: 7vw;
+      box-shadow: 5px 5px 10px #fbf4f4;
+      color: white;
+      padding-top:1% ;
+     }
+     .ns:hover{
+      background-color:green ;
+     }
+     .ps:hover{
+      background-color: green;
+     }
+     .nani{
+       display: flex;
+        width:100%;
+       
+      }
+      .pora{
+        display: flex;
+         
+ 
+      }
+      .prashanth{
+         margin-left: 10%;
+        height: 20vh;  
+        }
+        .prashanth>img{
+       border-radius: 70px;
+        }
+        .chu{
+        margin-left:-40%;
+        width: 60vw; 
+        font-size: 20px; 
+        color: gray;
+        margin-top: -5.7%;
+       }
+       .chi{
+       margin-left: 10%;
+        width: 500px;
+        font-size: 20px;
+        color: #25415D;
+        margin-top: -7.8%;
+        font-size: 25px; 
+       } 
+      .srinu>img{
+         border-radius: 20px;
+         height: 90vh;
+         width: 33vw;
+        }
+        .srinu{
+          margin-left: -590px;
+        }
+        .man{
+          margin-top: 50px;
+        }
+        .ka{
+          font-size: 40px;
+          margin-top: -2%;
+        }
+        .sunny{
+        display: flex;
+       justify-content: center;
+        gap:3%;
+        border: solid white;
+      }
+.icon {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .icon a {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background: #e99c2e;   
+      border-radius: 50%;
+      color: white;
+      font-size: 22px;
+      line-height: 50px;
+      text-align: center;
+      
+    }
+
+    .icon a:hover {
+     transform: translatey(-200px);
+     margin-top: -20%;
+    }
+    .container3{
+      background: #f8f8f8;
+       border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+    } 
+    .container3>.img{
+      border-top-left-radius: 10px;
+       border-top-right-radius: 10px
+    } 
+    .kim{
+      margin-left: 30%;
+       font-size: 30px;
+    }
+    .kara{
+      margin-left: 33%; 
+      font-size: 17px;
+       color: gray;
+    }
+       
+             .yesumma{ 
+             display: flex;
+            justify-content: center;
+             gap: 2rem;
+             margin-top: 50px;
+             background-color: rgb(250, 244, 244);
+            height: 70vh;
+            width: 100%;
+             margin-left:-1%;
+           }
+           .ram>img{
+             margin-left: 100px;
+              border-radius: 100px;
+              margin-top: 10%;
+           }
+             .ram p{
+             color: #666;
+               margin-bottom: 1.2rem;
+               font-size: 20px;
+               width: 254px; 
+              margin-left: 45px;
+            }
+            .ram{
+             background:white;
+             border-radius: 15px;
+            /* box-shadow: 0 2px 9px rgba(0,0,0,0.05); */
+              height: 49vh;
+              
+              margin-top: 3%;
+           }
+             .ram:hover{
+            transform: translatex(-500px);
+            transition: 2s,1s;
+            } 
+            .kaa{
+              margin-left: 90px; 
+              font-size: 20px;
+            }
+            .ram .kii{
+              margin-left: 35%;
+            } 
+            .vincy{
+              margin-top: 6%;
+            }
+              .baburao{
+               display: flex;
+              margin-top: 10px;
+              background-color: #fbf4f4;
+              width: 90%;
+              height: 21vh;
+              margin-left: 5%;
+              }
+            .rao{
+             margin-left: 200px;
+             margin-top: 40px;
+             
+
+             }
+           .pin{
+            margin-left:10px;
+            margin-top: -90px; 
+           }
+            .pi{
+            font-size: 50px;
+            margin-left: -50px; 
+            margin-top: 10px;
+             border-radius: 100px; 
+             background-color: #e99c2e; 
+             color: white;
+            }
+            .pe{
+              font-size: 50px; 
+              margin-left: -50px;
+               margin-top: 10px;
+               border-radius: 100px;
+                background-color:#e99c2e; 
+                color:white;
+            }
+            .pq{
+              font-size: 30px;
+                width: 50px;
+               height: 50px;
+               margin-left: -50px;
+                margin-top: 10px; 
+                border-radius: 110px; 
+                background-color: #e99c2e;
+                 color: white;
+            }
+            .pm{
+              font-size: 50px;
+               width: 50px;
+              height: 50px;
+              margin-left: -50px; 
+              margin-top: 10px;
+              background-color: #e99c2e; 
+              border-radius: 90px; color: white;
+            }
+            .map{
+              display: flex;
+              margin-top: 30px;
+              margin-left: 8%;
+             }
+     
+            .form{
+             display: block; 
+             width: 10%;
+             height: 10vh;
+             margin-left: -4%;
+            }
+            .boo{
+              margin-left:90px; 
+              margin-top: 80px; 
+              background-color: #e99c2e;
+              /* padding: 2%;  */
+              border-color: white;
+              border-radius: 4px; 
+              padding: 1%;
+              height: 60%; 
+              color: white;
+              width: 90%;
+
+            }
+            .boo:hover{
+              background-color: white;
+              color: #ab8d46;
+            }
+            .bru{
+              margin-left: 80px;
+               margin-top: 10px;
+            }
+            .cl>input{
+              width: 400%;
+              border-bottom-color: black;
+              border-right-color: black;
+            }
+            .sravanthi{
+              margin-top:% ;
+            }
+            .wast{
+              margin-top:60px;
+              
+            }
+            .charan img{
+              border-radius: 20px;
+               width: 650px; 
+               height: 450px;
+            }
+            .king{
+              border-radius: 20px;
+               margin-left: 10px;
+                width: 500px; 
+                height: 500px;
+            }
+            .maa{
+              margin-top: -5px;
+            }
+            .pandu{
+              margin-left:59%;
+              margin-top: -6%;
+              background-color:white;
+              border-radius: 15px;
+              box-shadow: 0 2px 8px white;
+               width: 30%;
+               height: 40vh;  
+            }
+            .pandu2{
+              margin-left:13%;
+              margin-top:-21%;
+              background-color:white;
+              border-radius: 15px;
+              box-shadow: 0 2px 8px white;
+               height: 40vh; 
+              }
+              .karm:hover{
+                background-color: white;
+                border: #e99c2e;
+                color: #e99c2e;
+              }
+              .karm{
+             background-color: #e99c2e;
+              color: #f8f8f8;
+               border-color: #f8f8f8; 
+               width: 12%;
+               height: 6vh;
+              }
+              .kar{
+               background-color: #e99c2e;
+              color: #f8f8f8;
+               border-color: #f8f8f8; 
+               width: 35%;
+               height: 6vh;
+              }
+              .kar:hover{
+                background-color: white;
+                border: #e99c2e;
+                color: #e99c2e;
+              }
+              .container4{
+              margin-top: 6%; 
+              background-color: rgb(246, 240, 240);
+              width: 500vw;
+              display: flex;
+              
+              }
+            .amma{
+              margin-left: 1%;
+              
+            } 
+            .amma h3{
+               margin-left: 15%;
+               font-size: 25px;
+               color: orange; 
+            }
+            .social-links{
+              margin-left: 12%;
+              list-style: none;
+             
+
+            }
+            .links{
+              margin-left: 2%;
+             
+              
+            }
+            .links>h3{
+              margin-left: 13%;
+              font-size: 25px;
+              color: orange;
+              width: 200px;
+            }
+            .newsletter {
+              margin-left: 3.3%;
+              
+            }
+            
+            .amma ul li{
+              list-style: none;
+              
+            }
+            .newsletter>h3{
+              font-size: 25px;
+              color:orange;
+            }
+            .links p{
+              font-size: 20px;
+            }
+            .amma p{
+              font-size: 20px;
+            }
+            .links p:hover{
+              color: orange;
+            }
+            
+        
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <ul class="child">
+       <li><a href="#BURGER KING" style="font-size: 30px; margin-left: -1%;text-decoration: none;"><b style="color: orange;">BURGER</b><b style="color: green;">KING</b></a></li>
+        <li><a href="#Home" style="margin-left: 500px;">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Feature">Feature</a></li>
+        <li><a href="#Chef">Chef</a></li>
+        <li><a href="#Menu">Menu</a></li>
+        <li><a href="#Booking">Booking</a></li>
+        <li>
+        <a href="#Pages">Pages</a>
+          <ul class="dropdown">
+           <li> <a href="#Blog Grid">Blog Grid</a></li>
+            <li><a href="#Blog Details">Blog Details</a></li>
+          </ul>
+          </li>
+        <li><a herf="#Contact">Contact</a></li>
+      </ul>  
+  </div>
+    <div class="child1"  id="Home">
+        <img src="https://themewagon.github.io/burgerking/img/carousel-1.jpg">
+        <h1><b style="color: white;">Best</b> <b style="color: orange;">Quality</b><b style="color: white;"> Ingredients</b></h1>
+        <h5>Lorem ipsum dolor sit amet elit.Phasellus ut molls mauris.Vivamus</h5> 
+        <h6> egestas eleifnd dul ac consequat at lectus in malesuada</h6>
+        <p>View Menu</p>
+        <h>Book Table</h>
+    </div>  
+     <div class="container" id="Booking" >
+        <div class="a">
+            <h2 style="color: green;">Book A Table</h2>
+            <h1>Book Your Table For Private Dinners & Happy Hours</h1>
+            <p style="color: rgb(120, 117, 117); font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. 
+                Curabitur facilisis 
+                ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.</p>
+            <p style="color: rgb(120, 117, 117); font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi.
+                 Curabitur facilisis ornare velit non vulputate. 
+                Aliquam metus tortor, auctor id gravida condimentum, 
+                viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
+                Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.</p>    
+        </div>
+        <div class="b">
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="email" placeholder="Email">
+            <input type="text" id="Mobile" placeholder="Mobile">
+            <input type="text" id="Date" placeholder="Date">
+            <input type="text" id="Time" placeholder="Time">
+            <input type="text" id="Guest" placeholder="Guest">
+            <p class="Book">Book Now</p>
+        </div>
+    </div>
+    <div class="container1" id="About">
+        <img src="https://themewagon.github.io/burgerking/img/about.jpg">
+        <div class="q">
+        <div class="g"></div>
+        <br>
+        </div>
+        <div class="c" id="Booking">
+        <h4 style="color: green; font-size: 19px;">About Us</h4>
+        <h1 style="font-size: 40px;">Cooking Since 1990</h1>
+        <p style="color: rgb(120, 117, 117); font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. 
+            Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor 
+            id gravida condimentum, viverra quis sem.</p>
+        <p style="color: rgb(148, 142, 142); font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. 
+            Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+             Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor.
+             Aliquam interdum at lacus non blandit</p>
+             <h5 class="bu">Book A Table</h5>
+        </div>
+      </div>
+      <div class="container2" id="Feature" >
+        <div class="sneha">
+            <h4 style="margin-left: 50px; color: green; font-size: 20px;">Why Choose Us</h4>
+            <h1 style="margin-left: 50px; font-size: 35px;">Our Key Features</h1>
+        <div class="imag">
+            <img src="https://themewagon.github.io/burgerking/img/feature-1.jpg">
+            <img src="https://themewagon.github.io/burgerking/img/feature-2.jpg">
+            <img src="https://themewagon.github.io/burgerking/img/feature-3.jpg">
+            <img src="https://themewagon.github.io/burgerking/img/feature-4.jpg">
+        </div>
+       
+        <p class="lu">Lorem ipsum dolor sit amet consec adipis elit.
+             Phasel nec preti mi. Curabit facilis ornare velit non vulputa.
+              Aliquam metus tortor, auctor id gravida condime, 
+            viverra quis sem. Curabit non nisl nec nisi sceleri maximus</p>
+         <p class="pa">Book Now</p>
+        </div>
+    
+          <div class="chanti">
+            <div class="d" >
+            <div class="feature-icon" style="font-size: 50px;">👨‍🍳</div>
+            <h2  >World’s best Chef</h2>
+            <p >Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis
+                 ornare velit non vulput metus tortor</p>
+            </div>
+              <div class="d">
+               <div class="feature-icon"  style="font-size: 50px;">🥕</div>
+                <h2 >Natural ingredients</h2>
+                <p >Lorem ipsum dolor sit amet elit. 
+                    Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor</p>
+              </div>
+              
+              <div class="d">
+                <div class="feature-icon"  style=" font-size: 50px;">🏅</div>
+                <h2  >Best quality products</h2>
+                 <p>Lorem ipsum dolor sit amet elit. 
+                    Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor</p>
+              </div> 
+              <div class="d">
+                <div class="feature-icon"  style=" font-size: 50px;">🥬</div>
+                <h2 >Fresh vegetables & Meet</h2>
+                 <p>Lorem ipsum dolor sit amet elit. 
+                    Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor</p>
+              </div> 
+              <div class="d">
+               <div class="feature-icon"  style=" font-size: 50px;">🚚</div>
+                <h2 >Fastest door delivery</h2>
+                  <p >Lorem ipsum dolor sit amet elit. 
+                    Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor</p>
+              </div> 
+              <div class="d">
+                 <div class="feature-icon"  style=" font-size: 50px;">🥩</div>
+                <h2 >Ground beef & Low fat</h2>
+                 <p  >Lorem ipsum dolor sit amet elit. 
+                    Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor</p>
+              </div>     
+          </div>
+    </div>  
+           <div class="menu-section" id="Menu">
+            <div class="menu-card">
+            <div class="menu-icon">🍔</div>
+            <h1>Burgers</h1>
+            <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputate. Aliquam metus tortor auctor quis sem.</p>
+           <a href="#">View Menu</a>
+           </div>
+          <div class="menu-card">
+         <div class="menu-icon">🥨</div>
+         <h1>Snacks</h1>
+        <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputate. Aliquam metus tortor auctor quis sem.</p>
+        <a href="#">View Menu</a>
+        </div>
+        <div class="menu-card">
+        <div class="menu-icon">🍹</div>
+        <h1>Beverages</h1>
+       <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputate. Aliquam metus tortor auctor quis sem.</p>
+        <a href="#">View Menu</a>
+      </div>
+     </div>
+              <center><div class="food"></div>
+            <h5 style="font-size: 20px; color:green">Food Menu</h5>
+             <h1>Delicious Food Menu</h1>
+            <div class="burgers">
+            <h4  class="pk"> Burgers</h4>
+            <h3  class="ps">Snakes</h3>
+           <h4  class="ns">Beverages</h4>
+         </div>
+        </div></center>
+        <div class="nani">
+      <ul>
+      <div class="prashanth">
+     <img src=" https://themewagon.github.io/burgerking/img/menu-burger.jpg">
+     <div class="pora">
+     <b class="chi">Mini cheese Burger...........................$9.00</b>
+     <p  class="chu">Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+      </div>
+      </div>
+     <div class="prashanth">
+      <img src="https://themewagon.github.io/burgerking/img/menu-burger.jpg">
+      <div class="pora">
+      <b  class="chi">Double size burger............................$11.00</b>
+       <p  class="chu">Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+     </div>
+     </div>
+     <div class="prashanth">
+      <img src="https://themewagon.github.io/burgerking/img/menu-burger.jpg">
+      <div class="pora">
+      <b  class="chi">Bacon, EGG and Cheese..........................$13.00</b>
+      <p  class="chu">Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+     </div>
+     </div>
+     <div class="prashanth">
+      <img src="https://themewagon.github.io/burgerking/img/menu-burger.jpg">
+      <div class="pora">
+      <b  class="chi">Pulled porx Burger...........................$18.00</b>
+      <p  class="chu">Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+     </div>
+     </div>
+     <div class="prashanth">
+      <img src="https://themewagon.github.io/burgerking/img/menu-burger.jpg">
+      <div class="pora">
+      <b class="chi">Fried chicken Burger..........................$22.00</b>
+      <p  class="chu">Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
+     </div>
+     </div>
+     </ul>
+      <div class="srinu">
+      <img src="https://themewagon.github.io/burgerking/img/menu-burger-img.jpg">
+     </div>
+     </div>
+     </div>
+          <center><div class="man">
+         <h5 style="font-size: 20px; color: green;">Our Team</h5>
+          <h2 class="ka">Our Master Chef</h2>
+         </div></center>
+          <div class="sunny">
+         <div class="container3">
+        <img src="https://themewagon.github.io/burgerking/img/team-1.jpg" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+        <div class="icon">
+         <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <i   class="kim">Adam Phillips</i>
+        <p  class="kara">CEO, Co Founder</p>
+      </div>
+      <div class="container3">
+        <img src="https://themewagon.github.io/burgerking/img/team-2.jpg">
+        <div class="icon">
+         <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+       <i  class="kim" >Dylan Adams</i>
+       <p  class="kara">Master Chef</p>
+      </div>
+      <div class="container3" id="Chef">
+        <img src="https://themewagon.github.io/burgerking/img/team-3.jpg">
+        <div class="icon">
+         <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+       <i  class="kim"style="margin-left: 30%; font-size: 30px;">Jhon Doe</i>
+       <p class="kara">Master Chef</p>
+      </div>
+      <div class="container3">
+        <img src="https://themewagon.github.io/burgerking/img/team-4.jpg" >
+        <div class="icon">
+         <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+       <i class="kim">Josh Dunn</i>
+       <p class="kara">Master Chef</p>
+      </div>
+     </div>
+        <div class="yesumma" >
+      <div class="ram">
+        <img src="https://themewagon.github.io/burgerking/img/testimonial-4.jpg">
+        <p>Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor. 
+          Lorem ipsum dolor sit amet elit</p>
+          <b  class="kaa">Client Name</b>
+        <p  class="kii">Profession</p>  
+      </div>
+      <div class="ram">
+        <img src="https://themewagon.github.io/burgerking/img/testimonial-1.jpg">
+        <p>Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor. 
+          Lorem ipsum dolor sit amet elit</p>
+          <b  class="kaa"style="margin-left: 90px; font-size: 20px;">Client Name</b>
+        <p  class="kii">Profession</p>  
+      </div>
+      <div class="ram">
+        <img src="https://themewagon.github.io/burgerking/img/testimonial-2.jpg">
+        <p>Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor. 
+          Lorem ipsum dolor sit amet elit</p>
+          <b  class="kaa"style="margin-left: 90px; font-size: 20px;">Client Name</b>
+        <p class="kii" >Profession</p>  
+      </div>
+      <div class="ram">
+        <img src="https://themewagon.github.io/burgerking/img/testimonial-3.jpg">
+        <p>Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor. 
+          Lorem ipsum dolor sit amet elit</p>
+          <b class="kaa">Client Name</b>
+        <p class="kii">Profession</p>  
+      </div>
+     </div>
+      <center><div class="vincy" id="Contact">
+      <h3 style="color: green;">Contact Us</h3>
+      <h1>Contact For Any Query</h1>
+     </div></center>
+     <div class="baburao">
+      <div class="rao">
+      <ion-icon name="location-outline"class="pi"></ion-icon>
+      <div class="pin">
+        <p style="font-size: 20px;color: green;">Address</p>
+        <h5 style="font-size: 15px;">123 Street, NY, USA</h5>
+      </div>
+       </div>
+       <div class="rao" id="Contact">
+      <ion-icon name="call-outline"  class="pe"></ion-icon>
+       <div class="pin" >
+      <p style="font-size: 20px;color: green">Call Us</p>
+      <h5 style="font-size: 15px;">+012 345 6789</h5>
+      </div>
+      </div> 
+       <div class="rao">
+      <ion-icon name="mail-outline"  class="pq"></ion-icon>
+       <div class="pin">
+      <p style="font-size: 20px;color: green;">Email Us</p>
+      <h5 style="font-size: 15px;">info@example.com</h5>
+        </div>
+      </div>
+      <div class="rao">
+      <ion-icon name="arrow-redo-outline" class="pm"></ion-icon> 
+      <div class="pin">
+        <p style="font-size: 20px;color: green">Follow Us </p>
+        <div class="ic">
+         <a href="#" style=" background-color: #e99c2e; height:50%;width: 90%; color: #f8f8f8; border-radius: 30px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style=" background-color: #e99c2e; width: 90%; color: #f8f8f8; border-radius: 30px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style=" background-color: #e99c2e; color: #f8f8f8; border-radius: 30px;"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" style=" background-color: #e99c2e; color: #f8f8f8; border-radius: 30px;"><i class="fab fa-instagram"></i></a> 
+      </div>
+      </div>
+    </div>
+    </div>
+            <div class="map">
+      <div class="frame">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2985005.5497439015!2d-77.332097!3d43.061532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1758264886327!5m2!1sen!2sbd" width="630" height="430" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" border-radius="40px"></iframe>
+      </div>
+      <div class="form" >
+        <p class="cl"><input type="text" id="name" placeholder="Your Name" style="background-color: white"></p>
+           <p class="cl"><input type="text" id="email" placeholder=" your Email"  style="background-color: white;"></p>
+            <p class="cl"><input type="text" id="Mobile" placeholder="Subject"  style="background-color: white; "><br></p>
+            <p class="bru"><textarea name="" id="">Message</textarea><br></p>
+            <button  class="boo">send message</button> 
+      </div>
+    </div>    
+         </div>
+    </div>
+    <center><div class="wast" id="Blog Grid">
+      <p style="color: green; font-size: 20px;">Food Blog</p>
+      <h1 style="font-size: 40px;">Latest From Food Blog</h1>
+    </div></center>
+    <center><div class="sravanthi" >
+      <div class="charan">
+        <img src="https://themewagon.github.io/burgerking/img/blog-1.jpg">
+        <img src="https://themewagon.github.io/burgerking/img/blog-2.jpg" class="king">
+      </div></center>
+      <div class="pandu" >
+        <h3 style="font-size: 25px;">Lorem ipsum dolor sit amet</h3>
+        <div class="meta" style="display: flex;" >
+          <ion-icon name="person-outline" style="color: #e99c2e;"></ion-icon>
+          <p  class="maa">Admine</p>
+          <ion-icon name="fast-food-outline" style="color: #e99c2e;"></ion-icon>
+          <p  class="maa">Food</p>
+          <ion-icon name="calendar-outline" style="color: #e99c2e;"></ion-icon>
+          <p class="maa">01-Jan-2045</p>
+          <ion-icon name="chatbubbles-outline" style="color: #e99c2e;"></ion-icon>
+          <p class="maa">10</p>
+        </div>
+        <p style="width:450px;color: #666; font-size: 19px;">Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare 
+          velit non vulpte liqum metus tortor. Lorem ipsum dolor sit amet elit. 
+          Neca pretim miura bitur facili ornare velit non vulpte</p>
+        <button class="kar">Read More</button>
+      </div>
+      <div class="pandu2">
+        <h3 style="font-size: 25px;">Lorem ipsum dolor sit amet</h3>
+        <div class="meta" style="display: flex;" >
+          <ion-icon name="person-outline" style="color: #e99c2e;"></ion-icon>
+          <p  class="maa">Admine</p>
+          <ion-icon name="fast-food-outline" style="color: #e99c2e;"></ion-icon>
+          <p  class="maa">Food</p>
+          <ion-icon name="calendar-outline" style="color: #e99c2e;"></ion-icon>
+          <p  class="maa">01-Jan-2045</p>
+          <ion-icon name="chatbubbles-outline" style="color: #e99c2e;"></ion-icon>
+          <p class="maa">10</p>
+        </div>
+        <p style="width:450px;color: #666; font-size: 19px;">Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare 
+          velit non vulpte liqum metus tortor. Lorem ipsum dolor sit amet elit. 
+          Neca pretim miura bitur facili ornare velit non vulpte</p>
+        <button class="karm">Read More</button>
+      </div>
+    </div>
+         <div class="container4">
+      <div class="amma">
+          <h3>Our Address</h3>
+      <ul>
+        <p>📍123 Street, New York, USA</p>
+        <p>📞 +012 345 67890</p>
+        <p>✉ info@example.com</p>
+      </ul>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class=" links">
+      <h3>Quick Links</h3>
+      <ul>
+        <p>Terms of use</p>
+        <p>Privacy policy</p>
+        <p>Cookies</p>
+        <p>Help</p>
+        <p>FQAs</p>
+      </ul>
+    </div>
+    <div class="newsletter">
+      <h3>Newsletter</h3>
+      <p style="width: 400px; font-size: 18px;">Lorem ipsum dolor sit amet elit. Quisque eu lectus a leo dictum nec non quam.
+         Tortor eu placerat rhoncus, lorem quam iaculis felis, sed lacus neque id eros.</p>
+      <form>
+        <input type="email" placeholder="Email goes here" required style="margin-left: -4%;">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+          
+
+</body>
+</html>
