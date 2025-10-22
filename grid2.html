@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(3,400px);
+            height:100hv;
+            gap:20px;
+            border:solid
+        }
+        .child{
+            background-color: aqua;
+            grid-row:1/50;
+            grid-column: 1/2;
+            border:solid;
+        }
+        .child1{
+            background-color: paleturquoise;
+            grid-column: 2/10;
+            grid-row: 1/25;
+            border:solid;
+        }
+        .child2{
+            background-color: cadetblue;
+            grid-column: 2/10;
+            grid-row:25/50;
+            border:solid;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child1"></div>
+        <div class="child2"></div>
+    </div>
+</body>
+</html>

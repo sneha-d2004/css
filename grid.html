@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            height:100vh;
+            gap:20px;
+            grid-template-columns:repeat(3,400px) ;
+        }
+        .class1{
+            background-color: blueviolet;
+            grid-row: 1/6;
+        }
+        .class2{
+            background-color: blue;
+            grid-column: 2/6;
+            grid-column: 2/6;
+        }
+        .class3{
+            background-color: brown;
+            grid-row:2/6 ;
+        }
+        .class4{
+            background-color:purple ;
+            grid-column:3/6 ;
+            grid-row: 3/6;
+        }
+        .class5{
+            background-color: chartreuse;
+            grid-column: 3/6;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="class1">sneha</div>
+        <div class="class2">prashanth</div>
+        <div class="class3">nani</div>
+        <div class="class4">chanti</div>
+        <div class="class5">yesumma</div>  
+    </div>
+</body>
+</html>

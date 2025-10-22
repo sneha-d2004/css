@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+           grid-template-columns: (repeat(4,400px));
+            gap:2px;
+            height:20vh;
+           width:30vh;
+           margin-left: 200px;
+           margin-top: 300px;
+           
+        }
+        .child{
+           border:solid;
+           grid-row: 1/10;
+           background-color: brown;
+           
+          
+           
+        }
+        .child1{
+          border: solid;
+          grid-column: 2/5;
+          background-color: orange;
+          grid-row: 1/3;
+          
+          
+        }
+        .child2{
+            border:solid;
+            grid-column: 2/5;
+            background-color: whitesmoke;
+             grid-row: 3/5;
+          
+
+
+           
+        }
+        .child3{
+            border: solid;
+            grid-column: 2/5;
+            background-color: green;
+            grid-row: 5/7;
+        
+           
+        }
+    </style>
+
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+    </div>
+</body>
+</html>

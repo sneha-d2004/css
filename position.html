@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width:300px;
+        }
+        .child{
+            position: static;
+            top:300px;
+            z-index: 60;
+        }
+        .child1{
+            position:relative;
+            top:300px;
+            left:200px;
+            
+        }
+        .child2{
+            position:absolute;
+            left:0px;
+            z-index:30;
+        }
+        .child3{
+            position: sticky;
+            top:300px;
+            
+        }
+        .child4{
+            position: fixed;
+            top:100px; 
+            right:100px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.unsplash.com/photo-1630168185910-60bcbf5cc8c3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2hpdGUlMjBmbG93ZXJzfGVufDB8fDB8fHww" class="child">
+    <img src="https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/bltd089708353d73094/662752d7fca144672a7d1687/spring-flowers-with-lilac.jpg?q=70&width=3840&auto=webp" class="child1">
+    <img src="https://img.freepik.com/free-photo/yellow-flowers-table_1160-725.jpg?semt=ais_hybrid&w=740&q=80" class="child2">
+    <img src="https://dam.thdstatic.com/content/production/nufH994ThXqVvm3KDU7BTw/srF1LNWpWbIkabgv6WOroQ/Original%20file/1af079fa-470d-4741-87a5-ea8e9dcf7634_english_lavender_1.jpeg?im=Resize=(920,575)"class="child3">
+    <img src="https://images.pexels.com/photos/697259/pexels-photo-697259.jpeg?cs=srgb&dl=pexels-hieu-697259.jpg&fm=jpg"class="child4">

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img1{
+            background-color: rgb(154, 93, 18);
+            border-radius: 20px;
+            height: 700px;
+            width: 700px; 
+              display: flex;
+            justify-content: center;
+            align-items: center;      
+        }
+        .i2{
+            height: 240px;
+            width: 240px;
+            background-color: rgba(206, 177, 15, 0.675);
+            border-radius: 250px; 
+            animation-name: i2;
+            position:absolute ;
+            animation-delay: 0.5s;
+            animation-duration:0.6s;
+            animation-direction: alternate;
+            animation-timing-function: linear;   
+            animation-iteration-count: infinite;
+            z-index: 30;
+                 
+        }
+        .i3{
+            height: 230px;
+            width: 230px;
+            border-radius: 180px;
+            background-color: rgb(125, 100, 9);
+            position: relative;
+            z-index: 100;
+        }
+        @keyframes i2{
+            0%{
+            height: 230px;
+            width: 230px;
+            border-radius: 230px;
+            background-color: gold;
+            }
+            50%{
+background-color: gold;
+       height: 260px;
+            width: 260px;
+            border-radius: 270px;
+            
+          
+            
+            }
+           100%{
+        background-color: gold;
+       height: 260px;
+            width: 260px;
+            border-radius: 270px;
+            
+                 
+           
+           }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img1">
+        <div class="i2"></div>
+        <div class="i3"></div>
+    </div>
+    
+        
+    </div>
+</body>
+</html>
